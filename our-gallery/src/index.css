@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2C1810;
+  background-image: 
+    radial-gradient(ellipse at 20% 50%, #3d2317 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, #4a2c1a 0%, transparent 40%);
+  min-height: 100vh;
+  font-family: 'Cormorant Garamond', serif;
+  color: #f5e6d3;
+}
