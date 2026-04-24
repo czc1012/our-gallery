@@ -1,0 +1,70 @@
+.frame-container {
+  break-inside: avoid;
+  margin-bottom: 32px;
+  padding: 12px;
+  cursor: pointer;
+  perspective: 1000px;
+  display: inline-block;
+  width: 100%;
+}
+
+.frame {
+  position: relative;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.frame.flipped {
+  transform: rotateY(180deg);
+}
+
+.frame-front {
+  position: relative;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.frame-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  background: #1a0f0a;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.frame-back p {
+  font-family: 'Georgia', serif;
+  font-size: 1.8rem;
+  color: #c9a84c;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.media-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Pennant — no box shadow */
+.frame-type-pennant .frame {
+  background: transparent;
+}
+
+/* Ticket back */
+.frame-type-ticket .frame-back {
+  background: #f5e6c8;
+}
+
+.frame-type-ticket .frame-back p {
+  color: #2C1810;
+  font-size: 1.4rem;
+}

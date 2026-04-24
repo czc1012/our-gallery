@@ -13,3 +13,34 @@ body {
   font-family: 'Cormorant Garamond', serif;
   color: #f5e6d3;
 }
+
+.gallery-wall {
+  columns: 3;
+  column-gap: 32px;
+  padding: 40px 60px 60px 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Georgia', serif;
+  font-size: 4rem;
+  color: #c9a84c;
+  text-align: center;
+  padding: 60px 0 0 0;
+  letter-spacing: 0.05em;
+}
+
+.gallery-header {
+  text-align: center;
+  padding: 60px 0 20px 0;
+}
+
+.gallery-subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  color: #a07840;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin: 8px 0;
+}
