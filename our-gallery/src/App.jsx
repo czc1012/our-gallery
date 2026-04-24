@@ -40,3 +40,27 @@ const galleryItems = [
     reason: "I could kiss you forever and ever"
   },
 ]
+
+function App() {
+  return (
+    <div>
+      <header className="gallery-header">
+        <p className="gallery-subtitle">our gallery</p>
+        <h1>josh & claire</h1>
+        <p className="gallery-subtitle">click each frame to read</p>
+      </header>
+      <div className="gallery-wall">
+        {galleryItems.map(item => (
+          <FramedPhoto
+            key={item.id}
+            image={item.image}
+            reason={item.reason}
+            type={item.type}
+          />
+        ))}
+      </div>
+    </div>
+  )
+}
+
+export default App
